@@ -30,7 +30,7 @@ function init(){
   engine = Engine.create();
 
   engine.world.gravity.x = 0;
-  engine.world.gravity. = 0;
+  engine.world.gravity.y = 0;
   let mouseConstraint = MouseConstraint.create(engine);
   World.add(engine.world, mouseConstraint);
 
@@ -135,8 +135,8 @@ function init(){
   engine.world.gravity.y = 4
   function update() {
     if(inc > 8){
-      engine.world.gravity.x = Math.cos(inc / 55)
-      engine.world.gravity.y = Math.sin(inc / 777)
+      engine.world.gravity.x = Math.cos(inc / 75)
+      engine.world.gravity.y = Math.sin(inc / 755)
     }
     inc++
     idRAF = requestAnimationFrame(update.bind(this))
