@@ -109,11 +109,11 @@ function init(){
     })
   ]);
 
-  for (let i = 0; i < 230; i++) {
-    let radius = 2 + Math.random() * 20
+ for (let i = 0; i < 230; i++) {
+    let radius = 2 + Math.random() * 13
     World.add(engine.world, Bodies.circle(
-      40 + Math.random() * width - 80,
-      40 + Math.random() * 100,
+      40 + Math.random() * width - 90,
+      40 + Math.random() * 50,
       radius, {
         render: {
           fillStyle: ["#4285F4", "#EA4335", "#FBBC05", "#34A853"][Math.round(Math.random() * 3)]
